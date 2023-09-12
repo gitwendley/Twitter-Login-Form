@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Login  Page</title>
+    <link rel="shortcut icon" href="./Images/twitter-logo.png" type="image/x-icon">
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgba(7,7,43);
+        }
+        .box{
+            background-color: whitesmoke;
+            width: 450px;
+            height: 85vh;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .box button{
+            background-color: transparent;  color:black; border:2px solid rgba(189,189,189);
+        }
+        .logo{
+            width: 30px;
+            margin-top: 20px;
+        }
+        .txt{
+            font-size: 24px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        .login{
+            width: 300px;
+            padding: 10px 15px;
+            border: 2px solid rgba(189,189,189);
+            border-radius: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        .login img{
+            width: 20px;
+            margin-right: 20px;
+        }
+        .or{
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .or p{
+            font-size: 18px;
+            padding: 0 10px;
+        }
+        hr{
+            width: 140px;
+
+        }
+        input{
+            margin-top: 10px;
+            padding: 15px 10px;
+            width: 300px;
+            font-weight: bold;
+            border-radius: 8px;
+            border: 2px solid rgba(189,189,189);
+            color: black;
+            outline: none;
+            cursor: pointer;
+        }
+        button{
+            width: 320px;
+            border-radius: 40px;
+            padding: 10px 0;
+            background-color: black;
+            color: white;
+            margin-top: 30px;
+        }
+        .signup{
+            position: relative;
+            margin-top: 10px;
+            right: 42px;
+            font-size: 14px;
+            margin-top: 30px;
+        }
+        span{
+            color: blue;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div class="box">
+        <img src="./Images/twitter-logo.png"  class="logo" alt="">
+        <p class="txt">Log in To twitter</p>
+        <div class="login google">
+            <img src="./Images/google.png" alt="">
+            <p>Log with google</p>
+        </div>
+        <div class="login">
+            <img src="./Images/apple.png" alt="">
+            <p>Log with apple</p>
+        </div>
+
+        <div class="or">
+            <hr><p>Or</p><hr>
+        </div>
+        <input type="text" placeholder="Phone, email or username">
+        <button  type="button">Forgot Password</button>
+        <p class="signup">Don't have an account <span>Sing Up</span></p>
+    </div>
+   </div> 
+</body>
+</html>
